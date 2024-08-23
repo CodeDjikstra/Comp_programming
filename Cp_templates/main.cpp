@@ -2,6 +2,11 @@
 
 using namespace std;
 
+#define PB push_back
+#define POP pop_back
+#define MP make_pair
+#define F first
+#define S second
 #define fixed(n) fixed << setprecision(n)
 #define ceil(n, m) (((n) + (m) - 1) / (m))
 #define add_mod(a, b, m) (((a % m) + (b % m)) % m)
@@ -16,6 +21,12 @@ using namespace std;
 #define ll long long
 #define ull unsigned long long
 #define EPS 1e-9
+#define REP(i, a, b) for (ll i = a; i < b; i++)
+
+typedef vector<ll> vi;
+typedef pair<ll,ll> pi;
+typedef vector<pair<ll,ll>> vpi;
+typedef vector<vector<ll>> vvi;
 
 //UTIL Functions
 ll gcd(ll a, ll b) {if (b == 0) return a; return gcd(b, a % b);}
@@ -50,7 +61,13 @@ void Solve(){
 
 int main(){
     ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
-    int test_cases = 1;
+    
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt","r",stdin);
+    freopen("output.txt","w",stdout);
+    #endif
+
+    ll test_cases = 1;
     cin >> test_cases;
     for(int tc = 1; tc <= test_cases; tc++){
         // cout << "Case #" << tc << ": ";
